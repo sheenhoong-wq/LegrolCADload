@@ -1,1 +1,140 @@
-
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LegrolCAD 隐私政策</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 32px 16px 64px;
+  background: #16191c; color: #e6e9ea;
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC",
+        "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+main { max-width: 46rem; margin: 0 auto; }
+h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 2.2em 0 .6em; padding-top: .6em; border-top: 1px solid #2c3136; }
+h2:first-of-type { border-top: 0; }
+p, li { margin: .7em 0; }
+a { color: #7cc4ff; }
+strong { color: #fff; }
+code {
+  background: #23272b; border: 1px solid #2f3439; border-radius: 4px;
+  padding: 1px 5px; font-size: .88em; word-break: break-all;
+}
+blockquote {
+  margin: 1.2em 0; padding: .6em 1em; border-left: 3px solid #3b4146;
+  background: #1d2124; color: #b9c0c5;
+}
+blockquote { border-left-color: #3b4146; }
+hr { border: 0; border-top: 1px solid #2c3136; margin: 2em 0; }
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; font-size: .94rem; }
+th, td { border: 1px solid #2c3136; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #1d2124; }
+.meta { color: #9aa3a9; font-size: .9rem; margin: 0 0 1.5em; }
+.nav { margin: 0 0 2em; font-size: .92rem; }
+.nav a { margin-right: 1em; }
+ul { padding-left: 1.3em; }
+</style>
+</head>
+<body>
+<main>
+<p class="nav"><a href="../">LegrolCAD</a><a href="../terms/">服务条款</a><a href="../privacy/">隐私政策</a></p>
+<h1>LegrolCAD 隐私政策</h1>
+<p><strong>版本 1.0 ｜ 生效日期：2026 年 9 月 24 日</strong></p>
+<p>本政策说明 GAN CHAI LIONG（下称「我们」）在你使用 LegrolCAD（下称「本应用」）时如何处理你的资料。</p>
+<p><strong>一句话版本：我们只记录你的账号信息（邮箱、登录时间等），用来统计用户与将来的订阅权限。你的图纸和设置只存在你的设备和你自己的 Google Drive，我们不上传、不保存、不查看。</strong></p>
+<hr>
+<h2>1. 我们收集什么</h2>
+<table><thead><tr><th>类别</th><th>具体内容</th><th>何时产生</th></tr></thead><tbody>
+<tr><td>账号标识</td><td>用户 ID（UID）、电子邮箱、显示名（若第三方登录提供）、登录方式（Google / 邮箱）</td><td>首次登录 / 注册时</td></tr>
+<tr><td>使用记录</td><td>首次登录时间、最近一次登录时间、应用版本号、平台（Android）、界面语言</td><td>每次登录成功时更新</td></tr>
+<tr><td>同意记录</td><td>你同意的《服务条款》与本政策的版本号与时间</td><td>你点击「同意并登录」时</td></tr>
+<tr><td>邮箱账号的凭据</td><td>密码（由 Google Firebase Authentication 以加盐哈希方式保管，<strong>我们看不到明文</strong>）</td><td>注册 / 改密码时</td></tr>
+</tbody></table>
+<h2>2. 我们<strong>不</strong>收集什么</h2>
+<ul>
+<li><strong>你的图纸内容</strong>：DXF / DWG 文件、底图、导出的图片与 PDF，全部不上传给我们；</li>
+<li><strong>你 Google Drive 里的文件清单</strong>：我们使用的 <code>drive.file</code> 权限只能访问本应用自己创建的文件，以及你在系统选择器里主动选中的文件；</li>
+<li>位置、通讯录、照片库、通话与短信记录、设备唯一标识（IMEI / 广告 ID）；</li>
+<li>任何用于广告投放或跨应用追踪的数据。<strong>我们不投放广告，不出售、不出租你的资料。</strong></li>
+</ul>
+<p>崩溃日志保存在你设备本地供排错使用，<strong>不会自动上传</strong>；你可以自行删除或在你愿意时手动发送给我们。</p>
+<h2>3. 我们为什么处理这些资料</h2>
+<ol>
+<li>让你登录、识别你的账号、恢复你的设置备份；</li>
+<li>统计有多少人在使用本应用（我们只看汇总数字与名单，不分析个人行为）；</li>
+<li>将来推出付费订阅时，判断你的账号拥有哪些权限；</li>
+<li>防止滥用、批量注册与攻击，保障服务安全；</li>
+<li>履行适用法律要求的义务。</li>
+</ol>
+<p><strong>处理的法律依据</strong>：你的同意（点击「同意并登录」）以及为履行《服务条款》所必需。</p>
+<h2>4. 资料存放在哪里、由谁处理</h2>
+<p>我们使用 <strong>Google Firebase</strong>（Firebase Authentication 与 Cloud Firestore）存放上述账号资料，数据库区域为 <code>asia-southeast1</code>（新加坡）。Google 在此扮演我们的资料处理者，并可能在其全球数据中心之间传输与备份资料，受 Google Cloud 的资料处理条款约束。</p>
+<p>除以下情形外，我们不向任何第三方披露你的资料：</p>
+<ul>
+<li>你明确同意；</li>
+<li>服务商为提供服务所必需（如上述 Google）；</li>
+<li>法律、法院命令或主管机关要求；</li>
+<li>为保护我们或他人的合法权益，防止欺诈或安全事件。</li>
+</ul>
+<h2>5. Google 用户资料的有限使用（Limited Use）</h2>
+<p>本应用使用 Google 账号登录，并在你启用云端功能时请求 <code>https://www.googleapis.com/auth/drive.file</code> 权限。我们对从 Google API 获得的资料遵守 <strong>Google API 服务用户资料政策</strong>（含 Limited Use 要求），具体是：</p>
+<ul>
+<li>这些资料<strong>只</strong>用于向你提供本应用内你主动要求的功能（打开你选中的图纸、把图纸或设置备份存到你自己的 Drive）；</li>
+<li><strong>不</strong>用于广告，<strong>不</strong>出售，<strong>不</strong>转让给第三方（除上述第 4 节情形）；</li>
+<li><strong>不</strong>由人工读取，除非：你明确同意、为安全调查或遵守法律所必需、或资料已充分匿名汇总；</li>
+<li>我们只申请完成功能所需的最小权限范围。你可以随时在 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> 撤销授权。</li>
+</ul>
+<h2>6. 设置备份与图纸（存在你自己的 Drive）</h2>
+<ul>
+<li>你开启云端备份后，<strong>通用设置</strong>会以 <code>settings.json</code> 存入<strong>你自己</strong> Google Drive 的 <code>LegrolCAD</code> 文件夹，你自己可见、可删、可拷走；</li>
+<li>转换服务器地址、访问令牌与 GitHub 令牌<strong>不进备份</strong>；</li>
+<li>你上传的图纸同样存放在你自己的 Drive；</li>
+<li>这些内容都在你的 Google 账号下，我们没有副本，也无法列出或读取。</li>
+</ul>
+<h2>7. DXF ↔ DWG 转换服务</h2>
+<p>本应用的 DWG 转换需要一个服务端组件，<strong>其地址与访问令牌由你在设置中自行填写</strong>（不内置、不预设）。你使用该功能时：</p>
+<ul>
+<li>待转换的图纸会通过 HTTPS 上传到你所填写的服务端；</li>
+<li>源文件在转换完成后即删除；DWG→DXF 的<strong>结果</strong>会按文件内容的哈希值缓存在该服务端，用于加速下次相同文件的转换，缓存空间超限时按最久未使用清除；</li>
+<li>若该服务端由 GAN CHAI LIONG 运营，我们仅将图纸用于完成这一次转换，不作其他用途；若由你或你的组织部署，则相应责任由部署方承担。</li>
+</ul>
+<p>不使用 DWG 转换功能时，不会有任何图纸离开你的设备与你的 Drive。</p>
+<h2>8. 我们保留多久</h2>
+<ul>
+<li>账号资料：账号存续期间持续保存；</li>
+<li>你在应用内使用「删除我的记录」后：账号记录与 Firebase 账号会被删除，我们的活跃数据库在 <strong>30 天</strong>内不再保留，例行备份中最长 <strong>90 天</strong>内被覆盖；</li>
+<li>法律要求保留的记录（如必要的交易或合规记录）按法定期限保留。</li>
+</ul>
+<h2>9. 你的权利</h2>
+<p>你可以：</p>
+<ul>
+<li><strong>查看</strong>我们保存的关于你的资料 —— 应用内「设置 → 账号」即显示全部字段；</li>
+<li><strong>更正</strong>不正确的资料（邮箱、显示名以第三方账号为准的，请在该账号处修改）；</li>
+<li><strong>删除</strong> —— 应用内「设置 → 账号 → 删除我的记录」一步完成，无需发邮件申请；</li>
+<li><strong>撤回同意</strong> —— 撤回即无法继续使用需要登录的功能，等同于删除账号；</li>
+<li><strong>投诉</strong> —— 先联系 qbcalculator@gmail.com，我们会在 30 天内回复；你也可以向马来西亚的资料保护主管机关投诉。</li>
+</ul>
+<h2>10. 安全措施</h2>
+<ul>
+<li>与服务器之间的通讯全程使用 HTTPS / TLS；</li>
+<li>Firestore 安全规则限制为<strong>只有你本人的账号才能读写自己那一份记录</strong>，客户端无法列举其他用户；订阅相关字段客户端只读；</li>
+<li>密码由 Firebase Authentication 保管，我们不接触明文；</li>
+<li>我们只收集提供服务所需的最少资料。</li>
+</ul>
+<p>请注意：没有任何系统能保证绝对安全。发生影响你资料的安全事件时，我们会按适用法律的要求通知你与主管机关。</p>
+<h2>11. 儿童</h2>
+<p>本应用不面向 13 岁以下人士，我们不会有意收集其资料。若你认为儿童向我们提供了资料，请联系 qbcalculator@gmail.com，我们会尽快删除。</p>
+<h2>12. 本政策的变更</h2>
+<p>我们可以修订本政策。新版本会在 <a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy">隐私政策页</a> 公布并标注版本号与生效日期。若变更涉及新增收集的资料类别或改变使用目的，我们会在应用内重新请求你的同意。</p>
+<h2>13. 联系我们</h2>
+<p>GAN CHAI LIONG ｜ qbcalculator@gmail.com</p>
+<hr>
+<h2>马来西亚个人资料保护法（PDPA 2010）</h2>
+<p>我们作为资料使用者（data user）处理你的个人资料，处理依据为你的同意与履行合同所需。你有权依 PDPA 第 30、34、38 条请求访问、更正与撤回同意。本政策的中英文版本（如提供）具有同等效力。</p>
+</main>
+</body>
+</html>
