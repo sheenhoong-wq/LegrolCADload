@@ -36,15 +36,19 @@ th { background: #1d2124; }
 .meta { color: #9aa3a9; font-size: .9rem; margin: 0 0 1.5em; }
 .nav { margin: 0 0 2em; font-size: .92rem; }
 .nav a { margin-right: 1em; }
+.nav .lang { float: right; }
+.nav .lang a { margin: 0 0 0 1em; }
+h1 + h1, hr + h1 { margin-top: .5em; }
 ul { padding-left: 1.3em; }
 </style>
 </head>
 <body>
 <main>
-<p class="nav"><a href="../">LegrolCAD</a><a href="../terms/">服务条款</a><a href="../privacy/">隐私政策</a></p>
-<h1>LegrolCAD 隐私政策</h1>
-<p><strong>版本 1.0 ｜ 生效日期：2026 年 9 月 24 日</strong></p>
-<p>本政策说明 GAN CHAI LIONG（下称「我们」）在你使用 LegrolCAD（下称「本应用」）时如何处理你的资料。</p>
+<p class="nav"><a href="../">LegrolCAD</a><a href="../terms/">服务条款 / Terms</a><a href="../privacy/">隐私政策 / Privacy</a><span class="lang"><a href="#zh">中文</a><a href="#en">English</a></span></p>
+<h1 id="zh">LegrolCAD 隐私政策</h1>
+<p><strong>版本 1.1 ｜ 生效日期：2026 年 9 月 24 日</strong></p>
+<blockquote><p>本政策另附<a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy/#en">英文版本</a>。<strong>如中英文版本有任何出入，以英文版本为准</strong>，中文版本仅供参考。</p></blockquote>
+<p>本政策说明 <strong>LEGROL SDN BHD</strong>（一家依马来西亚法律注册成立的有限公司，下称「我们」）在你使用 LegrolCAD（下称「本应用」）时如何处理你的资料。</p>
 <p><strong>一句话版本：我们只记录你的账号信息（邮箱、登录时间等），用来统计用户与将来的订阅权限。你的图纸和设置只存在你的设备和你自己的 Google Drive，我们不上传、不保存、不查看。</strong></p>
 <hr>
 <h2>1. 我们收集什么</h2>
@@ -99,8 +103,8 @@ ul { padding-left: 1.3em; }
 <p>本应用的 DWG 转换需要一个服务端组件，<strong>其地址与访问令牌由你在设置中自行填写</strong>（不内置、不预设）。你使用该功能时：</p>
 <ul>
 <li>待转换的图纸会通过 HTTPS 上传到你所填写的服务端；</li>
-<li>源文件在转换完成后即删除；DWG→DXF 的<strong>结果</strong>会按文件内容的哈希值缓存在该服务端，用于加速下次相同文件的转换，缓存空间超限时按最久未使用清除；</li>
-<li>若该服务端由 GAN CHAI LIONG 运营，我们仅将图纸用于完成这一次转换，不作其他用途；若由你或你的组织部署，则相应责任由部署方承担。</li>
+<li>源文件在转换完成后即删除；DWG→DXF 的<strong>结果</strong>会缓存在该服务端，用于加速下次相同文件的转换。缓存仅以文件内容的 SHA-256 哈希值为键，<strong>不关联任何用户账号、设备或其他身份信息</strong>；只有已经持有内容完全相同的文件的人才能算出该哈希值并取回缓存结果，因此缓存不会把图纸提供给未持有原件的任何人；缓存空间达到上限时按最久未使用自动清除；</li>
+<li>仅当该服务端由 LEGROL SDN BHD 运营并在应用内明确标示时，我们才会接触到你的图纸，且仅用于完成转换并按上述方式保留去身份化的缓存结果，不作其他用途；若由你、你的组织或任何第三方部署，我们不会接触你的图纸，相应责任由部署方承担。</li>
 </ul>
 <p>不使用 DWG 转换功能时，不会有任何图纸离开你的设备与你的 Drive。</p>
 <h2>8. 我们保留多久</h2>
@@ -125,16 +129,111 @@ ul { padding-left: 1.3em; }
 <li>密码由 Firebase Authentication 保管，我们不接触明文；</li>
 <li>我们只收集提供服务所需的最少资料。</li>
 </ul>
-<p>请注意：没有任何系统能保证绝对安全。发生影响你资料的安全事件时，我们会按适用法律的要求通知你与主管机关。</p>
+<p>请注意：没有任何系统能保证绝对安全。若发生可能对你的合法权益造成重大实质损害的个人资料泄露或安全事件，我们将依法在合理期限内采取补救措施，并按适用法律的要求履行对你与主管机关的告知或通报程序。</p>
 <h2>11. 儿童</h2>
 <p>本应用不面向 13 岁以下人士，我们不会有意收集其资料。若你认为儿童向我们提供了资料，请联系 qbcalculator@gmail.com，我们会尽快删除。</p>
 <h2>12. 本政策的变更</h2>
 <p>我们可以修订本政策。新版本会在 <a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy">隐私政策页</a> 公布并标注版本号与生效日期。若变更涉及新增收集的资料类别或改变使用目的，我们会在应用内重新请求你的同意。</p>
 <h2>13. 联系我们</h2>
-<p>GAN CHAI LIONG ｜ qbcalculator@gmail.com</p>
+<p>LEGROL SDN BHD ｜ qbcalculator@gmail.com</p>
 <hr>
 <h2>马来西亚个人资料保护法（PDPA 2010）</h2>
-<p>我们作为资料使用者（data user）处理你的个人资料，处理依据为你的同意与履行合同所需。你有权依 PDPA 第 30、34、38 条请求访问、更正与撤回同意。本政策的中英文版本（如提供）具有同等效力。</p>
+<p>我们作为资料使用者（data user）处理你的个人资料，处理依据为你的同意与履行合同所需。你有权依 PDPA 第 30、34、38 条请求访问、更正与撤回同意。本政策以英文与中文两种语言提供；如有出入，以英文版本为准。</p>
+<hr>
+<h1 id="en">LegrolCAD Privacy Policy</h1>
+<p><strong>Version 1.1 | Effective date: 24 September 2026</strong></p>
+<blockquote><p>This Policy is also provided in <a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy/#zh">Chinese</a>. <strong>In the event of any discrepancy or conflict between the English and Chinese versions, the English version shall prevail.</strong></p></blockquote>
+<p>This Policy explains how <strong>LEGROL SDN BHD</strong>, a private limited company incorporated under the laws of Malaysia ("we", "us", "our"), handles your data when you use LegrolCAD (the "App").</p>
+<p><strong>In one sentence: we record only your account information (e-mail address, sign-in times and the like) to count users and, in future, to manage subscription entitlements. Your drawings and settings exist only on your device and in your own Google Drive; we do not upload, store or view them.</strong></p>
+<hr>
+<h2>1. What we collect</h2>
+<table><thead><tr><th>Category</th><th>Details</th><th>When</th></tr></thead><tbody>
+<tr><td>Account identifiers</td><td>User ID (UID), e-mail address, display name (if provided by the third-party sign-in), sign-in method (Google / e-mail)</td><td>On first sign-in / registration</td></tr>
+<tr><td>Usage records</td><td>First sign-in time, most recent sign-in time, App version, platform (Android), interface language</td><td>Updated on each successful sign-in</td></tr>
+<tr><td>Consent record</td><td>The version and time of your acceptance of the Terms of Service and this Policy</td><td>When you tap "Agree and sign in"</td></tr>
+<tr><td>E-mail account credentials</td><td>Password (held by Google Firebase Authentication as a salted hash; <strong>we cannot see the plaintext</strong>)</td><td>On registration / password change</td></tr>
+</tbody></table>
+<h2>2. What we do <strong>not</strong> collect</h2>
+<ul>
+<li><strong>The content of your drawings</strong>: DXF / DWG files, underlays, exported images and PDFs are never uploaded to us;</li>
+<li><strong>The list of files in your Google Drive</strong>: the <code>drive.file</code> scope we use can only access files created by the App itself and files you explicitly select in the system picker;</li>
+<li>Location, contacts, photo library, call and SMS logs, or device identifiers (IMEI / advertising ID);</li>
+<li>Any data for advertising or cross-app tracking. <strong>We show no advertisements and we do not sell or rent your data.</strong></li>
+</ul>
+<p>Crash logs are kept locally on your device for troubleshooting and are <strong>not uploaded automatically</strong>; you may delete them or send them to us manually if you wish.</p>
+<h2>3. Why we process this data</h2>
+<ol>
+<li>To sign you in, identify your account and restore your settings backup;</li>
+<li>To count how many people use the App (we look only at aggregate numbers and the user list, not individual behaviour);</li>
+<li>To determine which entitlements your account holds when paid subscriptions are introduced in future;</li>
+<li>To prevent abuse, bulk registration and attacks, and to keep the service secure;</li>
+<li>To comply with obligations under applicable law.</li>
+</ol>
+<p><strong>Legal basis for processing</strong>: your consent (tapping "Agree and sign in") and the necessity of performing the Terms of Service.</p>
+<h2>4. Where the data is stored and who processes it</h2>
+<p>We use <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore) to store the account data described above. The database region is <code>asia-southeast1</code> (Singapore). Google acts as our data processor and may transfer and back up data between its data centres worldwide, subject to the Google Cloud data processing terms.</p>
+<p>We do not disclose your data to any third party except:</p>
+<ul>
+<li>with your explicit consent;</li>
+<li>where necessary for a service provider to deliver the service (such as Google, above);</li>
+<li>where required by law, a court order or a competent authority;</li>
+<li>to protect our or others' legitimate rights, or to prevent fraud or a security incident.</li>
+</ul>
+<h2>5. Limited Use of Google user data</h2>
+<p>The App uses Google Sign-In and, when you enable cloud features, requests the <code>https://www.googleapis.com/auth/drive.file</code> scope. Our handling of data obtained from Google APIs complies with the <strong>Google API Services User Data Policy</strong>, including the Limited Use requirements. Specifically:</p>
+<ul>
+<li>such data is used <strong>only</strong> to provide the features you actively request within the App (opening a drawing you selected, saving drawings or settings backups to your own Drive);</li>
+<li>it is <strong>not</strong> used for advertising, <strong>not</strong> sold, and <strong>not</strong> transferred to third parties (except as set out in section 4 above);</li>
+<li>it is <strong>not</strong> read by humans unless you have expressly consented, it is necessary for a security investigation or to comply with the law, or the data has been sufficiently anonymised and aggregated;</li>
+<li>we request only the minimum scope needed for the feature. You may revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<h2>6. Settings backup and drawings (stored in your own Drive)</h2>
+<ul>
+<li>When you enable cloud backup, your <strong>general settings</strong> are saved as <code>settings.json</code> in the <code>LegrolCAD</code> folder of <strong>your own</strong> Google Drive, where you can view, delete or copy them;</li>
+<li>The conversion server address, its access token and any GitHub token are <strong>never included</strong> in the backup;</li>
+<li>Drawings you upload are likewise stored in your own Drive;</li>
+<li>All of this lives under your Google account. We hold no copy and cannot list or read it.</li>
+</ul>
+<h2>7. DXF ↔ DWG Conversion Service</h2>
+<p>DWG conversion in the App requires a server-side component <strong>whose address and access token you enter yourself in the settings</strong> (nothing is bundled or pre-configured). When you use this feature:</p>
+<ul>
+<li>the drawing to be converted is uploaded over HTTPS to the server you entered;</li>
+<li>the source file is deleted once conversion completes; the <strong>result</strong> of a DWG→DXF conversion is cached on that server to speed up repeat conversions of the same file. The cache is keyed solely by the SHA-256 hash of the file content and is <strong>not associated with any user account, device or other identifying information</strong>; only someone who already holds a byte-for-byte identical file can compute that hash and retrieve the cached result, so the cache never makes a drawing available to anyone who does not already possess the original; entries are evicted least-recently-used automatically when the cache reaches its size limit;</li>
+<li>only where the server is operated by LEGROL SDN BHD and clearly identified as such within the App do we come into contact with your drawing, and then solely to complete the conversion and to retain the de-identified cached result as described above, and for no other purpose. Where the server is deployed by you, your organisation or any third party, we never come into contact with your drawing, and responsibility rests with the party operating that server.</li>
+</ul>
+<p>If you do not use DWG conversion, no drawing ever leaves your device or your Drive.</p>
+<h2>8. How long we keep data</h2>
+<ul>
+<li>Account data: for as long as your account exists;</li>
+<li>After you use "Delete my record" in the App: the account record and the Firebase account are deleted, the data is removed from our active database within <strong>30 days</strong>, and it is overwritten in routine backups within at most <strong>90 days</strong>;</li>
+<li>Records we are legally required to keep (such as necessary transaction or compliance records) are retained for the statutory period.</li>
+</ul>
+<h2>9. Your rights</h2>
+<p>You may:</p>
+<ul>
+<li><strong>Access</strong> the data we hold about you: "Settings → Account" in the App shows every field;</li>
+<li><strong>Correct</strong> inaccurate data (where the e-mail address or display name comes from a third-party account, change it at that account);</li>
+<li><strong>Delete</strong>: "Settings → Account → Delete my record" in the App does this in one step, with no e-mail request required;</li>
+<li><strong>Withdraw consent</strong>: withdrawal means you can no longer use features that require sign-in, and is equivalent to deleting your account;</li>
+<li><strong>Complain</strong>: contact qbcalculator@gmail.com first and we will reply within 30 days; you may also lodge a complaint with the Malaysian data protection authority.</li>
+</ul>
+<h2>10. Security measures</h2>
+<ul>
+<li>All communication with servers uses HTTPS / TLS;</li>
+<li>Firestore security rules restrict access so that <strong>only your own account can read and write your own record</strong>; clients cannot enumerate other users; subscription-related fields are read-only for clients;</li>
+<li>Passwords are held by Firebase Authentication; we never touch the plaintext;</li>
+<li>We collect only the minimum data needed to provide the service.</li>
+</ul>
+<p>Please note that no system can guarantee absolute security. In the event of a personal data breach or security incident that is likely to cause material harm to your legitimate interests, we will take remedial measures within a reasonable period in accordance with the law and carry out any notification to you and to the relevant authority that applicable law requires.</p>
+<h2>11. Children</h2>
+<p>The App is not intended for persons under 13, and we do not knowingly collect their data. If you believe a child has provided us with data, contact qbcalculator@gmail.com and we will delete it promptly.</p>
+<h2>12. Changes to this Policy</h2>
+<p>We may revise this Policy. The new version will be published on the <a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy/#en">Privacy Policy page</a> with its version number and effective date. If a change involves collecting new categories of data or changing the purposes of use, we will ask for your renewed consent within the App.</p>
+<h2>13. Contact us</h2>
+<p>LEGROL SDN BHD | qbcalculator@gmail.com</p>
+<hr>
+<h2>Malaysian Personal Data Protection Act 2010 (PDPA)</h2>
+<p>We process your personal data as a data user, on the basis of your consent and the necessity of performing the contract. You have the right under sections 30, 34 and 38 of the PDPA to request access to and correction of your personal data and to withdraw your consent. This Policy is provided in English and in Chinese; in the event of any discrepancy, the English version shall prevail.</p>
 </main>
 </body>
 </html>

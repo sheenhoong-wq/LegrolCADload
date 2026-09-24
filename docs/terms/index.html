@@ -36,23 +36,27 @@ th { background: #1d2124; }
 .meta { color: #9aa3a9; font-size: .9rem; margin: 0 0 1.5em; }
 .nav { margin: 0 0 2em; font-size: .92rem; }
 .nav a { margin-right: 1em; }
+.nav .lang { float: right; }
+.nav .lang a { margin: 0 0 0 1em; }
+h1 + h1, hr + h1 { margin-top: .5em; }
 ul { padding-left: 1.3em; }
 </style>
 </head>
 <body>
 <main>
-<p class="nav"><a href="../">LegrolCAD</a><a href="../terms/">服务条款</a><a href="../privacy/">隐私政策</a></p>
-<h1>LegrolCAD 服务条款</h1>
-<p><strong>版本 1.0 ｜ 生效日期：2026 年 9 月 24 日</strong></p>
+<p class="nav"><a href="../">LegrolCAD</a><a href="../terms/">服务条款 / Terms</a><a href="../privacy/">隐私政策 / Privacy</a><span class="lang"><a href="#zh">中文</a><a href="#en">English</a></span></p>
+<h1 id="zh">LegrolCAD 服务条款</h1>
+<p><strong>版本 1.1 ｜ 生效日期：2026 年 9 月 24 日</strong></p>
+<blockquote><p>本条款另附<a href="https://sheenhoong-wq.github.io/LegrolCADload/terms/#en">英文版本</a>。<strong>如中英文版本有任何出入，以英文版本为准</strong>，中文版本仅供参考（见第 18.5 条）。</p></blockquote>
 <p>请在使用 LegrolCAD（下称「本应用」）前完整阅读本条款。<strong>你点击「同意并登录」即表示你已阅读、理解并接受本条款与<a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy">《隐私政策》</a>。如不同意，请勿使用本应用。</strong></p>
 <hr>
 <h2>1. 谁提供本应用</h2>
-<p>本应用由 GAN CHAI LIONG（下称「我们」）提供。联系方式：qbcalculator@gmail.com。</p>
+<p>本应用由 <strong>LEGROL SDN BHD</strong>（一家依马来西亚法律注册成立的有限公司，下称「我们」）提供。联系方式：qbcalculator@gmail.com。</p>
 <h2>2. 定义</h2>
 <ul>
 <li><strong>本应用</strong>：LegrolCAD Android 应用程序及其后续版本。</li>
 <li><strong>图纸</strong>：你用本应用创建、打开、编辑或导出的 DXF / DWG 文件及其衍生内容（含底图、导出的图片与 PDF）。</li>
-<li><strong>转换服务</strong>：用于 DXF ↔ DWG 格式转换的服务端组件，其地址与访问令牌由使用者自行在设置中填写。</li>
+<li><strong>转换服务</strong>：用于 DXF ↔ DWG 格式转换的服务端组件，其地址与访问令牌由使用者自行在设置中填写。本应用不内置、不预设任何转换服务端。</li>
 </ul>
 <h2>3. 账号与登录</h2>
 <p>3.1 本应用需要登录后使用。你可以使用 Google 账号，或用电子邮箱注册本应用的账号。</p>
@@ -74,13 +78,13 @@ ul { padding-left: 1.3em; }
 <h2>5. 你的图纸与内容</h2>
 <p>5.1 <strong>你的图纸归你所有。</strong> 我们不取得图纸的任何所有权。</p>
 <p>5.2 图纸默认只存在你的设备上；你也可以选择把图纸上传到<strong>你自己的</strong> Google Drive。我们不保存、不备份、不浏览你的图纸内容。</p>
-<p>5.3 你使用转换服务时，图纸会被上传至该服务端用于格式转换。你应自行确认该服务端的归属与安全性；若该服务端由你或你的组织部署，相关责任由你承担。转换细节与数据保留见《隐私政策》。</p>
+<p>5.3 你使用转换服务时，图纸会被上传至你所填写的服务端用于格式转换。你应自行确认该服务端的归属与安全性。<strong>本应用客户端仅作为传输管道，不对你自行配置的转换服务端的可用性、安全性或合法性作任何背书或保证。对于因该服务端（无论由你、你的组织或任何第三方部署）所导致的数据泄露、网络传输被拦截、文件损坏、服务中断或第三方侵权，我们概不负责。</strong> 仅当该服务端由我们自行运营并在应用内明确标示时，其责任才由我们按本条款承担。转换细节与数据保留见《隐私政策》。</p>
 <p>5.4 你对自己处理的图纸内容负责，包括是否有权处理、是否含机密或个人资料。</p>
 <h2>6. 第三方服务</h2>
 <p>6.1 Google 登录、Google Drive、Firebase 等服务由 Google 提供，受 Google 自身的服务条款与隐私政策约束。我们无法控制这些服务的可用性、限额与政策变化。</p>
 <p>6.2 第三方服务变更、限流或终止而导致本应用的相关功能（如云端备份、登录）不可用时，我们不承担责任，但会尽合理努力告知或提供替代方案。</p>
 <h2>7. 格式兼容性与专业判断（重要）</h2>
-<p>7.1 DXF / DWG 的读写、字体替代、标注样式、块与图案填充的呈现，<strong>可能与 AutoCAD 或其他 CAD 软件存在差异</strong>。本应用不是 AutoCAD，也未获 Autodesk 认证或背书。</p>
+<p>7.1 DXF / DWG 的读写、字体替代、标注样式、块与图案填充的呈现，<strong>可能与 AutoCAD 或其他 CAD 软件存在差异</strong>。本应用不是 AutoCAD，也未获 Autodesk 认证或背书。本应用对 DXF / DWG 格式的支持仅基于公开的技术规范及依其许可证合规使用的开源库实现，与 Autodesk, Inc. 无任何官方合作、授权、关联或技术背书关系。</p>
 <p>7.2 本应用提供的测量、面积、坐标等数值是基于图纸数据的计算结果，<strong>仅供参考</strong>。</p>
 <p>7.3 <strong>你不得将本应用的输出作为施工、结构、消防、电气、报批或其他涉及人身与财产安全之决策的唯一依据。</strong> 正式用途前请用专业软件核对，并由具备资质的人员审核。</p>
 <h2>8. 数据与备份责任</h2>
@@ -95,12 +99,12 @@ ul { padding-left: 1.3em; }
 <p>10.1 现阶段本应用不收费。</p>
 <p>10.2 我们保留将来对部分功能收费的权利。届时将在应用内与本条款中明示价格与范围；<strong>收费不溯及已提供的免费功能的既有使用</strong>，你可以选择不购买而继续使用免费部分（除非该功能本身被停止提供）。</p>
 <h2>11. 知识产权</h2>
-<p>本应用的代码、界面、名称、标识、文档及其一切知识产权归 GAN CHAI LIONG 或其许可方所有。本条款未明示授予的权利均予保留。DXF、DWG、AutoCAD、Autodesk、Google、Android 等为其各自权利人的商标，本应用对其的提及仅为说明兼容性，不表示任何关联或认可。</p>
+<p>本应用的代码、界面、名称、标识、文档及其一切知识产权归 LEGROL SDN BHD 或其许可方所有。本条款未明示授予的权利均予保留。DXF、DWG、AutoCAD、Autodesk 为 Autodesk, Inc. 的商标；Google、Android、Google Drive、Firebase 为 Google LLC 的商标；其他名称为其各自权利人的商标。本应用对上述商标的提及仅为说明格式兼容性或所依赖的服务，不表示任何关联、赞助或认可。</p>
 <h2>12. 免责声明</h2>
 <p>在法律允许的最大范围内，本应用按<strong>「现状」与「现有可用」</strong>提供，我们不作任何明示或默示的保证，包括但不限于对适销性、特定用途适用性、不侵权、准确性、可靠性、不中断或无错误的保证。你自行承担使用本应用的全部风险。</p>
 <h2>13. 责任限制</h2>
 <p>13.1 在法律允许的最大范围内，我们不对以下损失承担责任：利润损失、业务中断、数据或图纸丢失或损坏、商誉损失、第三方索赔，以及任何间接、附带、特殊、惩罚性或后果性损害，即便我们已被告知此类损失的可能性。</p>
-<p>13.2 在任何情况下，我们就本条款或本应用承担的<strong>累计责任总额</strong>，以下列两者中较高者为限：(a) 你在索赔事件发生前十二（12）个月内为本应用向我们实际支付的费用；或 (b) 等值于 <strong>50 美元</strong>的当地货币金额。</p>
+<p>13.2 在任何情况下，我们就本条款或本应用承担的<strong>累计责任总额</strong>，以你在索赔事件发生前十二（12）个月内为本应用向我们实际支付的费用总额为限；若你在该期间内未向我们支付任何费用（包括你使用本应用的免费部分），则该上限为 <strong>五十马来西亚令吉（RM 50）</strong>。</p>
 <p>13.3 部分司法管辖区不允许排除某些保证或限制某些责任，因此上述条款对你的适用范围以当地法律允许者为限；本条款不排除依法不可排除的责任（如故意或重大过失、人身伤害）。</p>
 <h2>14. 赔偿</h2>
 <p>因你违反本条款、违法使用本应用，或因你处理的图纸内容引发第三方主张、索赔、行政调查或诉讼，你应赔偿我们由此产生的损失、费用与合理的律师费，并使我们免受损害。</p>
@@ -119,9 +123,91 @@ ul { padding-left: 1.3em; }
 <p>18.2 <strong>不弃权</strong>：我们未行使或延迟行使任何权利，不构成对该权利的放弃。</p>
 <p>18.3 <strong>完整协议</strong>：本条款与《隐私政策》构成你与我们之间关于本应用的完整协议，取代此前的口头或书面沟通。</p>
 <p>18.4 <strong>转让</strong>：你不得转让本条款下的权利义务；我们可在业务转让、重组时将本条款一并转让。</p>
-<p>18.5 <strong>语言</strong>：本条款以中文版本为准；其他语言译本仅为方便阅读。</p>
+<p>18.5 <strong>语言</strong>：本条款以英文与中文两种语言提供。如两种版本有任何出入或冲突，<strong>以英文版本为准</strong>；中文及其他语言版本仅为方便阅读。</p>
 <h2>19. 联系我们</h2>
-<p>qbcalculator@gmail.com</p>
+<p>LEGROL SDN BHD ｜ qbcalculator@gmail.com</p>
+<hr>
+<h1 id="en">LegrolCAD Terms of Service</h1>
+<p><strong>Version 1.1 | Effective date: 24 September 2026</strong></p>
+<blockquote><p>These Terms are also provided in <a href="https://sheenhoong-wq.github.io/LegrolCADload/terms/#zh">Chinese</a>. <strong>In the event of any discrepancy or conflict between the English and Chinese versions, the English version shall prevail</strong> (see clause 18.5).</p></blockquote>
+<p>Please read these Terms in full before using LegrolCAD (the "App"). <strong>By tapping "Agree and sign in" you confirm that you have read, understood and accepted these Terms and the <a href="https://sheenhoong-wq.github.io/LegrolCADload/privacy/#en">Privacy Policy</a>. If you do not agree, do not use the App.</strong></p>
+<hr>
+<h2>1. Who provides the App</h2>
+<p>The App is provided by <strong>LEGROL SDN BHD</strong>, a private limited company incorporated under the laws of Malaysia ("we", "us", "our"). Contact: qbcalculator@gmail.com.</p>
+<h2>2. Definitions</h2>
+<ul>
+<li><strong>App</strong>: the LegrolCAD Android application and any subsequent versions.</li>
+<li><strong>Drawings</strong>: DXF / DWG files that you create, open, edit or export with the App, and anything derived from them (including underlays and exported images and PDFs).</li>
+<li><strong>Conversion Service</strong>: the server-side component used for DXF ↔ DWG format conversion, whose address and access token are entered by the user in the App's settings. The App does not bundle or pre-configure any Conversion Service.</li>
+</ul>
+<h2>3. Account and sign-in</h2>
+<p>3.1 The App requires you to sign in. You may sign in with a Google account or register an App account with an e-mail address.</p>
+<p>3.2 You warrant that the information you provide when registering and signing in is true and accurate, and that you have reached the age at which you may independently enter into a contract in your jurisdiction (persons under 18 must use the App with the consent of a legal guardian; the App is not intended for persons under 13).</p>
+<p>3.3 Your account is for your personal use only. You are responsible for safeguarding your password and device, and for all consequences of anyone else using your account. Notify us immediately if you discover unauthorised use of your account.</p>
+<p>3.4 The number of accounts a single person may register is limited to a reasonable number. We may restrict or delete accounts created abusively or by automated bulk registration.</p>
+<h2>4. Licence and restrictions</h2>
+<p>4.1 We grant you a <strong>non-exclusive, non-transferable, revocable</strong> licence to install and use the App for your own purposes on devices owned or controlled by you or by the organisation to which you belong.</p>
+<p>4.2 You must not:</p>
+<ul>
+<li>decompile, disassemble or reverse-engineer the App, or attempt to extract any key, token or algorithm from it (except for interoperability purposes expressly permitted by law);</li>
+<li>crack, circumvent or remove the App's sign-in, verification, licensing or copyright notices;</li>
+<li>copy, sell, rent, sub-license or redistribute the App or its installation package;</li>
+<li>make automated large-scale calls to the App or the services it depends on, or perform load testing, denial-of-service attacks or vulnerability scanning against them;</li>
+<li>use the App for unlawful activities, or upload or process third-party files that you have no right to process;</li>
+<li>impersonate any other person, or offer services to others in the App's name without our written permission.</li>
+</ul>
+<p>4.3 The App includes third-party open-source components, which are provided under their respective licences. Those licences take precedence with respect to the component concerned.</p>
+<h2>5. Your Drawings and content</h2>
+<p>5.1 <strong>Your Drawings belong to you.</strong> We do not acquire any ownership of your Drawings.</p>
+<p>5.2 By default, Drawings exist only on your device. You may also choose to upload Drawings to <strong>your own</strong> Google Drive. We do not store, back up or view the content of your Drawings.</p>
+<p>5.3 When you use a Conversion Service, your Drawing is uploaded to the server address you have entered for format conversion. You are responsible for verifying the ownership and security of that server. <strong>The App acts solely as a transport channel and gives no endorsement or warranty as to the availability, security or legality of any Conversion Service that you configure yourself. We accept no liability for any data leakage, interception of network traffic, file corruption, service interruption or third-party infringement caused by such a server, whether deployed by you, your organisation or any third party.</strong> Only where a Conversion Service is operated by us and clearly identified as such within the App do we accept responsibility for it under these Terms. Details of the conversion process and data retention are set out in the Privacy Policy.</p>
+<p>5.4 You are responsible for the content of the Drawings you process, including whether you have the right to process them and whether they contain confidential or personal data.</p>
+<h2>6. Third-party services</h2>
+<p>6.1 Google Sign-In, Google Drive, Firebase and similar services are provided by Google and are governed by Google's own terms of service and privacy policy. We have no control over the availability, quotas or policy changes of those services.</p>
+<p>6.2 We are not liable where a change, throttling or termination of a third-party service makes a related feature of the App (such as cloud backup or sign-in) unavailable, but we will make reasonable efforts to inform you or to offer an alternative.</p>
+<h2>7. Format compatibility and professional judgement (important)</h2>
+<p>7.1 The reading and writing of DXF / DWG files, font substitution, dimension styles, and the rendering of blocks and hatches <strong>may differ from AutoCAD or other CAD software</strong>. The App is not AutoCAD and is not certified or endorsed by Autodesk. The App's support for the DXF / DWG formats is based solely on publicly available technical specifications and on open-source libraries used in compliance with their licences; the App has no official partnership, authorisation, affiliation or technical endorsement relationship with Autodesk, Inc.</p>
+<p>7.2 Measurements, areas, coordinates and other values produced by the App are calculated from the drawing data and are <strong>for reference only</strong>.</p>
+<p>7.3 <strong>You must not rely on the App's output as the sole basis for any decision concerning construction, structural, fire-safety, electrical, regulatory-approval or other matters involving personal or property safety.</strong> Before any formal use, verify the results with professional software and have them reviewed by a suitably qualified person.</p>
+<h2>8. Data and backup responsibility</h2>
+<p>8.1 We do not provide any backup or recovery service for your Drawings.</p>
+<p>8.2 Uninstalling the App, clearing system storage, changing devices, revoking file permissions, or suspension of a third-party cloud account may all result in data loss. <strong>Backing up your data is your responsibility.</strong></p>
+<p>8.3 Local mechanisms such as auto-save and the pending-conversion queue are best-effort aids and do not constitute any promise that data will not be lost.</p>
+<h2>9. Provision, changes and termination of the service</h2>
+<p>9.1 The App is currently provided free of charge. We may at any time add, modify, suspend or discontinue the App or any of its features, including interrupting the service for maintenance, upgrade or security reasons.</p>
+<p>9.2 If you seriously or repeatedly breach these Terms, we may suspend or terminate your account without prior notice. After termination you retain access to the Drawings stored on your own device and in your own Drive.</p>
+<p>9.3 You may stop using and uninstall the App at any time, and you may delete your account record from within the App.</p>
+<h2>10. Fees</h2>
+<p>10.1 The App is currently free of charge.</p>
+<p>10.2 We reserve the right to charge for certain features in the future. Prices and scope will be clearly stated within the App and in these Terms at that time. <strong>Charges will not apply retrospectively to your existing use of features provided free of charge</strong>, and you may choose not to purchase and continue to use the free features (unless the feature itself is discontinued).</p>
+<h2>11. Intellectual property</h2>
+<p>The App's code, user interface, name, logo, documentation and all intellectual property therein belong to LEGROL SDN BHD or its licensors. All rights not expressly granted in these Terms are reserved. DXF, DWG, AutoCAD and Autodesk are trademarks of Autodesk, Inc.; Google, Android, Google Drive and Firebase are trademarks of Google LLC; other names are trademarks of their respective owners. References to those marks in the App are made solely to describe format compatibility or the services relied upon, and do not imply any affiliation, sponsorship or endorsement.</p>
+<h2>12. Disclaimer of warranties</h2>
+<p>To the maximum extent permitted by law, the App is provided <strong>"as is" and "as available"</strong>, without any warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy, reliability, uninterrupted operation or freedom from error. You use the App entirely at your own risk.</p>
+<h2>13. Limitation of liability</h2>
+<p>13.1 To the maximum extent permitted by law, we shall not be liable for any loss of profits, business interruption, loss or corruption of data or Drawings, loss of goodwill, third-party claims, or any indirect, incidental, special, punitive or consequential damages, even if we have been advised of the possibility of such loss.</p>
+<p>13.2 In no event shall our <strong>aggregate liability</strong> arising out of or in connection with these Terms or the App exceed the total amount you have actually paid to us for the App in the twelve (12) months preceding the event giving rise to the claim. If you have paid us nothing during that period (including where you use the free part of the App), that cap shall be <strong>fifty Malaysian Ringgit (RM 50)</strong>.</p>
+<p>13.3 Some jurisdictions do not allow the exclusion of certain warranties or the limitation of certain liabilities, so the above clauses apply to you only to the extent permitted by local law. Nothing in these Terms excludes liability that cannot be excluded by law (such as liability for wilful misconduct, gross negligence or personal injury).</p>
+<h2>14. Indemnity</h2>
+<p>You shall indemnify us and hold us harmless against all losses, costs and reasonable legal fees arising from any third-party claim, demand, regulatory investigation or proceeding caused by your breach of these Terms, your unlawful use of the App, or the content of the Drawings you process.</p>
+<h2>15. Force majeure</h2>
+<p>We are not liable for any failure or delay in performance caused by events beyond our reasonable control, including natural disasters, war, epidemics, government action, power or network outages, or failure of third-party services.</p>
+<h2>16. Changes to these Terms</h2>
+<p>16.1 We may revise these Terms. The revised version will be published on the <a href="https://sheenhoong-wq.github.io/LegrolCADload/terms/#en">Terms of Service page</a> with its version number and effective date.</p>
+<p>16.2 <strong>Material changes</strong> (for example the introduction of fees, an increase in the categories of data collected, or a change to the dispute-resolution mechanism) will require your renewed consent within the App; if you do not consent, you will not be able to continue using features that require sign-in. Non-material changes take effect upon publication, and your continued use constitutes acceptance.</p>
+<p>16.3 We record in your account the version of the Terms you accepted and the time of acceptance, as evidence for both parties.</p>
+<h2>17. Governing law and dispute resolution</h2>
+<p>17.1 These Terms are governed by the laws of Malaysia, without regard to its conflict-of-laws rules.</p>
+<p>17.2 The parties shall first attempt to resolve any dispute through good-faith negotiation. If negotiation fails, the dispute shall be submitted to the courts of Malaysia having jurisdiction.</p>
+<p>17.3 To the extent permitted by law, you agree to bring claims only in your individual capacity and not to participate in any class action or class arbitration.</p>
+<h2>18. General</h2>
+<p>18.1 <strong>Severability</strong>: if any provision of these Terms is held invalid or unenforceable, the remaining provisions remain in full force.</p>
+<p>18.2 <strong>No waiver</strong>: our failure or delay in exercising any right does not constitute a waiver of that right.</p>
+<p>18.3 <strong>Entire agreement</strong>: these Terms together with the Privacy Policy constitute the entire agreement between you and us concerning the App and supersede all prior oral or written communications.</p>
+<p>18.4 <strong>Assignment</strong>: you may not assign your rights or obligations under these Terms; we may assign these Terms in connection with a transfer or reorganisation of our business.</p>
+<p>18.5 <strong>Language</strong>: these Terms are provided in English and in Chinese. <strong>In the event of any discrepancy or conflict between the two versions, the English version shall prevail</strong>; the Chinese version and any other translation are provided for convenience only.</p>
+<h2>19. Contact us</h2>
+<p>LEGROL SDN BHD | qbcalculator@gmail.com</p>
 </main>
 </body>
 </html>
